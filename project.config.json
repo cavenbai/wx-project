@@ -4,7 +4,7 @@
   "description": "wx",
   "appid": "wxa4f26e60126d5d35",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": false,
     "enhance": false,
     "postcss": false,

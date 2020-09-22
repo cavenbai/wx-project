@@ -6,14 +6,14 @@
 
 <script>
   import { getCurrentInstance } from '@tarojs/taro'
-  import { coursesList } from '../../apis'
+  import { coursesList, coursesListGet } from '../../apis'
   export default {
     name: 'List',
     mounted() {
-      console.log(getCurrentInstance().router.params)
+      console.log(getCurrentInstance().router.params) //获取路由参数
       const params = { page_num: 1, page_size: 4, show_position: 2 };
       coursesList(params).then(res => {
-        console.log(res, 898989898)
+        console.log(res)
       })
     }
   }
