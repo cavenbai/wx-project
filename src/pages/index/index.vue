@@ -4,6 +4,10 @@
     <NumberSubmit/>
     <button @tap="go">跳转tabBar wiki</button>
     <button @tap="gobar">跳转非tabBar</button>
+    <van-button type="primary">主要按钮</van-button>
+    <van-button loading type="primary" />
+    <van-button loading type="primary" loading-type="spinner" />
+    <van-button loading type="info" loading-text="加载中..." />
   </view>
 </template>
 

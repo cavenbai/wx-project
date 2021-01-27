@@ -14,9 +14,14 @@ const config = {
   },
   copy: {
     patterns: [
+      { from: 'src/components/vant-weapp/dist/wxs', to: 'dist/components/vant-weapp/dist/wxs' },
+      { from: 'src/components/vant-weapp/dist/common/style', to: 'dist/components/vant-weapp/dist/common/style' },
+      { from: 'src/components/vant-weapp/dist/common/index.wxss', to: 'dist/components/vant-weapp/dist/common/index.wxss' },
+      { from: 'src/components/vant-weapp/dist/icon', to: 'dist/components/vant-weapp/dist/icon'},
+      { from: 'src/components/vant-weapp/dist/loading', to: 'dist/components/vant-weapp/dist/loading'},
+      { from: 'src/components/vant-weapp/dist/button', to: 'dist/components/vant-weapp/dist/button' },
     ],
-    options: {
-    }
+    options: {}
   },
   framework: 'vue',
   mini: {
@@ -24,7 +29,7 @@ const config = {
       pxtransform: {
         enable: true,
         config: {
-
+          selectorBlackList: [/van-/]
         }
       },
       url: {
