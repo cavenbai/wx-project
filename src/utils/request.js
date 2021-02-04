@@ -1,5 +1,5 @@
 import Taro from '@tarojs/taro';
-const baseUrl = 'https://edu-test.megyueying.com';
+const baseUrl = 'http://localhost:8001';
 
 export default (options = { method: 'GET', data: {}, url: '' }) => {
   Taro.showLoading({title: '加载中', mask: true})
