@@ -2,6 +2,7 @@ import Vue from 'vue'
 import store from './store'
 
 import './app.scss'
+import 'taro-ui-vue/dist/style/index.scss'
 
 // Vue.config.productionTip = false
 

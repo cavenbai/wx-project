@@ -13,16 +13,7 @@ const config = {
   defineConstants: {
   },
   copy: {
-    patterns: [
-      { from: 'src/components/vant-weapp/dist/wxs', to: 'dist/components/vant-weapp/dist/wxs' },
-      { from: 'src/components/vant-weapp/dist/common', to: 'dist/components/vant-weapp/dist/common' },
-      { from: 'src/components/vant-weapp/dist/icon', to: 'dist/components/vant-weapp/dist/icon'},
-      { from: 'src/components/vant-weapp/dist/loading', to: 'dist/components/vant-weapp/dist/loading'},
-      { from: 'src/components/vant-weapp/dist/button', to: 'dist/components/vant-weapp/dist/button' },
-      { from: 'src/components/vant-weapp/dist/datetime-picker', to: 'dist/components/vant-weapp/dist/datetime-picker' },
-      { from: 'src/components/vant-weapp/dist/picker-column', to: 'dist/components/vant-weapp/dist/picker-column' },
-      { from: 'src/components/vant-weapp/dist/picker', to: 'dist/components/vant-weapp/dist/picker' },
-    ],
+    patterns: [],
     options: {}
   },
   framework: 'vue',
@@ -30,9 +21,7 @@ const config = {
     postcss: {
       pxtransform: {
         enable: true,
-        config: {
-          selectorBlackList: [/van-/]
-        }
+        config: {}
       },
       url: {
         enable: true,
@@ -52,6 +41,7 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
+    esnextModules: ['taro-ui-vue'],
     postcss: {
       autoprefixer: {
         enable: true,
